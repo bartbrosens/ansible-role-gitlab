@@ -7,10 +7,14 @@ gitlab_version: ''
 gitlab_backup_path: "/var/opt/gitlab/backups"
 gitlab_config_template: "gitlab.rb.j2"
 
+gitlab_initial_root_password: "verysecretpassword"
+
 # SSL Configuration.
 gitlab_redirect_http_to_https: "true"
 gitlab_ssl_certificate: "/etc/gitlab/ssl/gitlab.crt"
 gitlab_ssl_certificate_key: "/etc/gitlab/ssl/gitlab.key"
+gitlab_letsencrypt_enable: "true"
+gitlab_letsencrypt_contact_emails: []
 
 # SSL Self-signed Certificate Configuration.
 gitlab_create_self_signed_cert: "true"
